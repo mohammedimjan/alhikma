@@ -1,0 +1,83 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  }
+  
+  body {
+	background-color: #f5f5f5;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  .head-padd {
+	padding: 20px;
+  }
+  
+  table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  table thead {
+	background-color: #f2f2f2;
+  }
+  
+  table th {
+	padding: 15px;
+	font-weight: 600;
+	text-align: left;
+	border-bottom: 1px solid #dddddd;
+  }
+  
+  table tbody tr {
+	border-bottom: 1px solid #dddddd;
+  }
+  
+  table td {
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	border-bottom: 1px solid #dddddd;
+  }
+  
+  table .center {
+	text-align: center;
+  }
+  
+
+  .results h1 {
+	text-align: center;
+	margin: 1rem 0 2rem;
+	font-size: 2rem;
+	color: var(--primary-color);
+  }
+  
+  .learning-main h1 {
+	text-align: center;
+	margin: 1rem 0 2rem;
+	font-size: 2rem;
+	color: var();
+  }
+  
+  .download-button {
+	padding: 5px 12px;
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 5px;
+	opacity: 1;
+  }
+  
+  .download-button:hover {
+	opacity: 0.9;
+	color: white;
+  }
+
+  .genrate-report{
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 1rem;
+  }
+  

@@ -1,0 +1,270 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	text-decoration: none;
+	list-style: none;
+	scroll-behavior: smooth;
+}
+:root{
+	--primary-color: #263476;
+	--secondary-color: #6ECDDD;
+	--sub-color: white;
+}
+a {
+	color: var(--primary-color);
+	transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+	color: var(--secondary-color);
+}
+
+
+/* section{
+    padding: 90px 15% 80px;
+} */
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+label {
+	color: black;
+	margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"],input[type="number"],input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+}
+
+input[type="submit"] {
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	font-weight: bold;
+	cursor: pointer;
+	width: auto !important;
+	transition: all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover{
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-weight: bold;
+}
+
+
+
+@media screen and (max-width: 600px) {
+	label{
+		font-size: 12px;
+	}
+}
+
+.col{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: bold;
+}
+
+
+.sidebar {
+	width: 250px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: -250px;
+	z-index: 1001;
+	background-color: var(--primary-color);
+	transition: left 0.3s ease-in;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar ul li {
+	padding: 10px;
+}
+
+.sidebar ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+.sidebar ul li.active-link {
+	background-color: var(--secondary-color);
+	z-index: 2; /* Added z-index to bring the active link above the open/close button */
+}
+
+.openbtn {
+	position: sticky;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: var(--primary-color);
+	border: none;
+	color: #fff;
+	padding: 10px 15px;
+	z-index: 1001;
+}
+
+.sidebar ul li a i{
+	color: var(--sub-color);
+	margin-right: 1rem;
+}
+
+/* Styling for content area */
+.content {
+	margin-left: 250px;
+	padding: 20px;
+	background-color: #f1f1f1;
+	height: 1000px; /* Just for demonstration */
+}
+
+.sidebar ul {
+	padding-top: 80px;
+}
+	
+		header{
+			position: fixed;
+			width: 100%;
+			top: 0;
+			background: var(--sub-color);
+			left: 0;
+			height: auto;
+			z-index: 1000;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 23px 2%;
+			transition: all .38s ease;
+		}
+
+		.logo {
+			width: 8rem;
+		}
+		header.sticky{
+			padding: 15px 3%;
+			background: white;
+			box-shadow: 0px 4px 15px rgb(0 0 0 8%);
+		}
+
+.head-padd{
+	margin-top: 100px;
+}
+
+
+.calender{
+	padding: 20px;
+   }
+   
+
+.download-button{
+	padding: 5px 12px !important;
+	background-color: var(--primary-color);
+	color: white;
+	border-radius: 5px;
+	width: auto !important;
+	opacity: 1;
+  }
+
+  .download-button:hover{
+	opacity: 0.9;
+	color: white;
+  }
+
+  .delete-button{
+	padding: 5px 12px;
+	background-color:red !important;
+	color: white;
+	border-radius: 5px;
+	opacity: 1;
+	width: auto !important;
+  }
+
+  .delete-button:hover{
+	opacity: 0.6;
+	color: white !important;
+  }
+
+  .active-button{
+	padding: 5px 12px;
+	background-color:green !important;
+	color: white !important;
+	border-radius: 5px;
+	opacity: 1;
+  }
+
+  .active-button:hover{
+	opacity: 0.5;
+	color: white !important;
+  }
+  
+  .logout{
+	background-color: var(--primary-color);
+	color: white;
+	padding: 0.8rem;
+	opacity: 1;
+	border-radius: 10px;
+	transition: ease 1s;
+  }
+
+  .logout:hover{
+	background-color: #263376a7;
+  }
+
+  .add-lm-btn{
+	margin-bottom: 2rem;
+  }
+
+  .grade-sec{
+	width: 50% !important;
+	display: flex !important;
+	align-items: center !important;
+  }
+
+  .grade{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 2rem;
+  }
+
+  .expired-row {
+	background-color: #ffcccc; /* Red background color */
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(230, 230, 230) !important;
+}
+
+table th{
+	background-color: var(--primary-color) !important;
+	color: white !important;
+}
+table{
+	margin-top: 2rem !important;
+}
+
+#profile th{
+	background-color: white !important;
+	color: black !important;
+}
+
+#profile tbody tr{
+	background-color: white !important;
+}

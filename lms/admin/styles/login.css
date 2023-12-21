@@ -1,0 +1,112 @@
+.main-bg {
+	position: relative;
+	height: 100%;
+	min-height: 100vh;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("../images/adminlogin-bg.jpg") no-repeat;
+	background-size: cover;
+}
+.main-bg::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-color: var(--primary-color);
+}
+
+.l-contents {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+.l-content-left img {
+	width: 450px;
+	border-radius: 20px 0 0 20px;
+}
+
+.l-content-right {
+	padding: 2.5rem;
+	background-color: white;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+
+.l-content-right img {
+	width: 350px;
+}
+
+.l-content-right h3 {
+	font-size: 2rem;
+	text-align: center;
+	color: var(--primary-color);
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+	.l-content-left img {
+		width: 360px;
+		border-radius: 15px 0 0 15px;
+	}
+	.l-content-right img {
+		width: 310px;
+	}
+}
+@media screen and (max-width: 780px) {
+	.l-content-left img {
+		width: 300px;
+		border-radius: 15px 0 0 15px;
+	}
+	.l-content-right img {
+		width: 260px;
+	}
+	.l-content-right h3 {
+		font-size: 1.5rem;
+		text-align: center;
+		color: var(--primary-color);
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.l-content-right {
+		padding: 1.5rem;
+		background-color: white;
+		box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+		border-radius: 15px;
+	}
+}
+@media screen and (max-width: 630px) {
+	.l-contents{
+		flex-direction: column;
+	}
+	.l-content-left img {
+		width: 240px;
+		border-radius: 15px 15px 0 0;
+	}
+	.l-content-right img {
+		width: 180px;
+	}
+	.l-content-right h3 {
+		font-size: 1.5rem;
+		text-align: center;
+		color: var(--primary-color);
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.l-content-right {
+		padding: 1.5rem;
+		background-color: white;
+		box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+		border-radius: 0 0 15px 15px;
+	}
+}

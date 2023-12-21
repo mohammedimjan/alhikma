@@ -1,0 +1,10 @@
+.learning-main h1{
+	text-align: center;
+	margin: 1rem 0 2rem;
+	font-size: 2rem;
+	color: var();
+  }
+
+  .viewlearn-m table td{
+	padding: 15px;
+  }

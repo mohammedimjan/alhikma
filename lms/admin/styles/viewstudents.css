@@ -1,0 +1,11 @@
+.student-search input[type="search"]{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+	font-size: 16px;
+}
+
+.student-search{
+	margin-bottom: 1rem;
+}

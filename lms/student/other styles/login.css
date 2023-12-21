@@ -1,0 +1,157 @@
+
+.main-bg {
+	position: relative;
+	height: 100%;
+	min-height: 100vh;
+	background: url("../Images/index-bg.jpg") no-repeat;
+	background-size: cover;
+}
+.main-bg::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	background-color: var(--primary-color);
+  }
+.i-contents {
+	position: absolute;
+	background-color: var(--sub-color);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row;
+	padding: 2rem;
+	border-radius: 20px;
+	box-shadow: 0 0 100px rgba(0, 0, 0, 0.9);
+}
+.i-content-left{
+	display: flex;
+	flex: 1;
+	margin-right: 2.5rem;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.i-content-left h2{
+	color: var(--primary-color);
+	font-size: 2rem;
+	text-align: center;
+}
+.i-content-left img {
+	width: 15rem;
+	height: auto;
+	margin-top: 2rem;
+}
+.i-content-right{
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.i-content-right h3{
+	color: var(--primary-color);
+	margin-bottom: 1rem;
+	font-size: 1.4rem;
+}
+
+.i-content-right p{
+	margin-top: 1rem;
+}
+
+.i-content-right form a{
+	margin-bottom: 0.5rem;
+}
+
+
+
+	@media screen and (max-width: 1150px) {
+		.i-contents {
+			flex-direction: column;
+			padding: 1rem;
+		}
+
+		.i-content-left {
+			margin-right: 0;
+			margin-bottom: 2.5rem;
+		}
+
+		.i-content-right {
+			display: flex;
+			align-items: center;
+		}
+		.i-content-left img {
+			width: 12rem;
+			margin-top: 1rem;
+		}
+		.i-content-left h2{
+			font-size: 1.5rem;
+		}
+		.i-content-right h3{
+			margin-bottom: 0.7rem;
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (max-width: 600px) {
+		.i-content-left {
+			margin-bottom: 1.5rem;
+		}
+		.i-content-left img {
+			width: 8rem;
+			margin-top: 1rem;
+		}
+		.i-content-left h2{
+			font-size: 1rem;
+		}
+		.i-contents {
+			padding: 1rem;
+			border-radius: 15px;
+		}
+		.i-content-right h3{
+			margin-bottom: 0.5rem;
+			font-size: 0.8rem;
+		}
+		.i-content-right h3{
+			margin-bottom: 0.5rem;
+			font-size: 0.8rem;
+		}
+		.i-content-right p{
+			margin-top: 0.5rem;
+			font-size: 14px;
+		}
+		
+		.i-content-right form a{
+			margin-bottom: 0.5rem;
+			font-size: 14px;
+		}
+		
+	}
+
+	
+	@media screen and (max-width: 450px) {
+		.i-content-left img {
+			width: 6rem;
+			margin-top: 1rem;
+		}
+		.i-content-left h2{
+			font-size: 0.8rem;
+		}
+		.i-content-right h3{
+			margin-bottom: 0.5rem;
+			font-size: 0.5rem;
+		}
+		.i-content-right p{
+			margin-top: 0.5rem;
+			font-size: 10px;
+		}
+		
+		.i-content-right form a{
+			margin-bottom: 0.5rem;
+			font-size: 10px;
+		}
+	}

@@ -1,0 +1,161 @@
+.edit-profile{
+	padding: 4rem;
+}
+  
+  .r-contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+  }
+  
+  .r-contents-right img {
+	width: 600px;
+	border-radius: 20px 0 0 20px;
+  }
+  
+  .r-contents-left {
+	padding: 2rem;
+	background-color: white;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+  }
+  
+  .r-contents-left h3 {
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	margin-bottom: 0.8rem;
+  }
+  
+  @media screen and (max-width: 1100px) {
+	.r-contents-right {
+	  display: none;
+	}
+  }
+  
+  @media screen and (max-width: 500px) {
+	.r-contents {
+	  padding: 0.5rem;
+	  margin: 1rem;
+	}
+  }
+  
+  /* Form */
+  .form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+  }
+  
+  .form-container label {
+	color: black;
+	margin-bottom: 5px;
+  }
+  
+  .form-container input,
+  .form-container select {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+  }
+  
+  .form-container input[type="submit"] {
+	text-align: center;
+	background-color: var(--primary-color);
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	max-width: 5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+  }
+  
+  .form-container input[type="submit"]:hover {
+	background-color: var(--secondary-color);
+	color: var(--primary-color);
+	font-weight: bold;
+  }
+  
+  .subject-checkboxes {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 1rem;
+  }
+  
+  .subject-checkboxes div {
+	flex-basis: auto;
+	padding: 0 2rem;
+	margin-right: 1rem;
+  }
+  
+  .inline-2 {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+  }
+  
+  .inline-2 input[type="text"],
+  .inline-2 select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border: 1px solid var(--primary-color);
+	border-radius: 4px;
+  }
+  
+  .inline-2 div:nth-child(1) {
+	margin-right: 2rem;
+  }
+  
+  .inline-2 div {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+  }
+  
+  @media screen and (max-width: 600px) {
+	.form-container label {
+	  font-size: 12px;
+	}
+	.edit-profile{
+		padding: 2rem;
+	}
+  }
+  
+  @media screen and (max-width: 500px) {
+	.inline-2 div:nth-child(1) {
+	  margin-right: 0.5rem;
+	}
+	.subject-checkboxes div{
+		padding: 0 1rem;
+	}
+	
+	.r-contents-left h3 {
+	  text-align: center;
+	  font-size: 1.2rem;
+	}
+	.edit-profile{
+		padding: 1rem;
+	}
+  }
+  
+  @media screen and (max-width: 400px) {
+
+	.subject-checkboxes div{
+		padding: 0 0.2rem;
+	}
+	.edit-profile{
+		padding: 0.3rem;
+	}
+	
+
+  }
+  
